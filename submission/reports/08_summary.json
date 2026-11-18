@@ -1,0 +1,19 @@
+{
+  "verdict": {
+    "decision": "Release",
+    "n_errors": 0,
+    "n_warn_images": 16,
+    "n_images": 202,
+    "warn_ratio": 0.0792,
+    "reasons": [
+      "Không còn lỗi bắt buộc; 16/202 ảnh còn cảnh báo (7.9%) < ngưỡng 10%: đủ điều kiện phát hành.",
+      "Đã tính 80 ảnh do người duyệt (bỏ qua cảnh báo của các ảnh này)."
+    ]
+  },
+  "reviewed": 80,
+  "budget": 80,
+  "seconds": 5.0,
+  "exported": "E:\\VSCode\\AIThucChien\\K5-L23-DAY09-2A202603310-AutoQCPipeline\\submission\\export\\clean_v1",
+  "config_sha1": "e821272353c57a420c7f6fa25b36cb28e5982690",
+  "review_sim_sha1": "7988ca22827f780a7043a2300490e679a1697154"
+}
