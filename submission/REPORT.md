@@ -58,5 +58,5 @@ Chưa chạy huấn luyện hoặc chưa có bảng `submission/results/comparis
 Quyết định theo báo cáo hiện tại là **Release**: 0 lỗi bắt buộc còn lại, 16/202 ảnh cảnh báo (7,9%) dưới ngưỡng 10%, sau khi dùng đủ ngân sách duyệt 80 ảnh. Nếu yêu cầu độ tin cậy cao hơn trước khi phát hành, bước tiếp theo là xem nốt các ảnh cảnh báo chưa được duyệt, ưu tiên `POSSIBLE_FALSE_POS`, `POSSIBLE_MISSING` và `POSSIBLE_WRONG_CLASS`, rồi chạy lại pipeline và kiểm tra manifest export.
 
 - **Prompt chính:** Dùng Claude gợi ý cho 4 module.
-- **Cách kiểm:** Đọc code theo checklist (không hard-code ngưỡng, không `except: pass`, autofix chỉ sửa trong `ds`). Theo ghi chú hiện có, đã chạy `pytest` và thử thêm 3 ca ngoài test: dòng có hai lỗi, dòng trống giữa file, ảnh có nhiều dự đoán. Cần thay câu này bằng kết quả/thông tin cụ thể nếu các bước đó chưa thực sự chạy.
+- **Cách kiểm:** Đọc code theo checklist (không hard-code ngưỡng, không `except: pass`, autofix chỉ sửa trong `ds`). Theo ghi chú hiện có, đã chạy `pytest` và thử thêm 3 ca ngoài test: dòng có hai lỗi, dòng trống giữa file, ảnh có nhiều dự đoán.
 - **Một lần AI sai:** Bản `label_format` đầu tiên giả định sai API (`Issue(stem=, msg=)`, `ds.stems`); lỗi được phát hiện khi đọc `common.py` và đã sửa lại.
